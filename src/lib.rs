@@ -1,4 +1,4 @@
-//! # Local DAG Executor
+//! # Local DAG Scheduler
 //!
 //! A concurrent DAG (Directed Acyclic Graph) executor that maximizes parallelism
 //! by running tasks as soon as their dependencies are resolved.

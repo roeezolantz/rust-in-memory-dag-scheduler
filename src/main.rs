@@ -1,4 +1,4 @@
-use local_dag::{generate_mock_data, DagExecutor, ProcessFn};
+use local_dag_scheduler::{generate_mock_data, DagExecutor, ProcessFn};
 use rand::Rng;
 use std::sync::Arc;
 use tokio::time::{sleep, Duration};

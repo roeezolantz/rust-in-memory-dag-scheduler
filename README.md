@@ -1,4 +1,4 @@
-# Local DAG Executor
+# Local DAG Scheduler
 
 A high-performance concurrent DAG (Directed Acyclic Graph) executor in Rust that maximizes parallelism by running tasks as soon as their dependencies are resolved.
 
@@ -17,14 +17,14 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-local-dag = { git = "https://github.com/YOUR_USERNAME/local-dag" }
+local-dag-scheduler = { git = "https://github.com/roeezolantz/rust-in-memory-dag-scheduler" }
 tokio = { version = "1", features = ["full"] }
 ```
 
 ## Quick Start
 
 ```rust
-use local_dag::{DagExecutor, Node};
+use local_dag_scheduler::{DagExecutor, Node};
 
 #[tokio::main]
 async fn main() {
@@ -122,7 +122,7 @@ if result.is_complete() {
 ### Mock Data Generation
 
 ```rust
-use local_dag::mock::{generate_mock_data, generate_mock_data_with_config, MockConfig};
+use local_dag_scheduler::mock::{generate_mock_data, generate_mock_data_with_config, MockConfig};
 
 // Simple: generate 50 nodes
 let nodes = generate_mock_data(50);

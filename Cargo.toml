@@ -1,5 +1,5 @@
 [package]
-name = "local-dag"
+name = "local-dag-scheduler"
 version = "0.1.0"
 edition = "2021"
 
